@@ -1,13 +1,23 @@
 site_name: nicomedkey.cc Docs
-repo_name: uboar/nicomedkey-docs
+
+repo_url: https://github.com/uboar/nicomedkey-docs
 
 theme:
   name: material
   language: ja
   logo: https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/logo_kari2.png
   favicon: https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/logo_kari2.png
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - toc.integrate
   font:
     text: Kosugi Maru
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_css:
   - stylesheets/extra.css

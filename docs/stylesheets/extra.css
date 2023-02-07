@@ -4,11 +4,6 @@
     --md-primary-fg-color--dark: #e88f1a;
 }
 
-.md-content h1 {
-    border-bottom: var(--md-primary-fg-color) 2px;
-    border-bottom-style: solid;
-}
-
 .md-content h2 {
     border-bottom: var(--md-primary-fg-color) 2px;
     border-bottom-style: double;
