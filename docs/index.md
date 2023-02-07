@@ -1,0 +1,1 @@
+# nicomedkey.cc 利用規約
