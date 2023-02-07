@@ -1,7 +1,5 @@
 site_name: nicomedkey.cc Docs
 
-repo_url: https://github.com/uboar/nicomedkey-docs
-
 theme:
   name: material
   language: ja
