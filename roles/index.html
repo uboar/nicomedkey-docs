@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../custom/">
       
       
-        <link rel="next" href="../roles/">
+        <link rel="next" href="../customemoji/">
       
       <link rel="icon" href="https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/nicomedkey/icon_b.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
     
     
       
-        <title>Misskeyソフトウェアと拡張について - nicomedkey.cc Docs</title>
+        <title>ロールについて - nicomedkey.cc Docs</title>
       
     
     
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Misskeyソフトウェアと拡張について
+              ロールについて
             
           </span>
         </div>
@@ -173,12 +173,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../custom/" class="md-tabs__link">
       Misskeyソフトウェアと拡張について
     </a>
   </li>
@@ -187,10 +185,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../roles/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       ロールについて
     </a>
   </li>
@@ -274,6 +274,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../custom/" class="md-nav__link">
+        Misskeyソフトウェアと拡張について
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -284,12 +299,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Misskeyソフトウェアと拡張について
+          ロールについて
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Misskeyソフトウェアと拡張について
+        ロールについて
       </a>
       
         
@@ -307,49 +322,29 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    本体のソースコードについて
+    ベースロール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    アップデートに関して
+  <a href="#new-user" class="md-nav__link">
+    NEW USER
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    独自機能に関して
-  </a>
-  
-    <nav class="md-nav" aria-label="独自機能に関して">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    レイアウト調整
+  <a href="#early-user" class="md-nav__link">
+    EARLY USER
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    トップページへのユーザー情報追加
+      
+        <li class="md-nav__item">
+  <a href="#bottrusted-bot" class="md-nav__link">
+    BOT・TRUSTED BOT
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    ニコニコ動画広告の追加
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -357,21 +352,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../roles/" class="md-nav__link">
-        ロールについて
-      </a>
     </li>
   
 
@@ -422,29 +402,32 @@
 
 
 
-  <h1>Misskeyソフトウェアと拡張について</h1>
+  <h1>ロールについて</h1>
 
 <p>更新日:2023年3月26日</p>
-<h2 id="_1">本体のソースコードについて</h2>
-<p>本サービスはオープンソースソフトウェアである「Misskey」に一部独自の改修を加えたソフトウェア（以下、nicomedkey）を使用しています。</p>
-<p>nicomedkeyはMisskey本体のAGPL-3.0ライセンスに従い、<a href="https://github.com/uboar/nicomedkey">GitHubでソースコードが公開されています。</a></p>
-<h2 id="_2">アップデートに関して</h2>
-<p>nicomedkeyはMisskey本体の更新に追従し、随時アップデートを実施します。</p>
-<p>アップデート方針は以下の通りです。</p>
+<p>ロールは、ユーザーに割り当てられた役割・権限を指します。</p>
+<p>本サービスは、以下に代表されるロールが存在し、ユーザーが使用出来る機能を制限・拡張しています。</p>
+<h2 id="_1">ベースロール</h2>
+<p>基本となるロールです。（ユーザーページには表示されません）</p>
 <ul>
-<li>基本的に、公開されているMisskey本体の最新版をベースに、独自機能のマージを行います。</li>
-<li>上記の関係上、最新版へのアップデートに時間が掛かる場合があります。</li>
-<li>アップデート時にはサーバーの再起動を実施します。</li>
-<li>Misskey本体側の変更とnicomedkeyで追加された機能の両立が難しい場合、追加機能の排除を行う事があります。</li>
+<li>ドライブ容量：1000MB</li>
+<li>レートリミット基準：通常</li>
 </ul>
-<h2 id="_3">独自機能に関して</h2>
-<p>nicomedkeyにはMisskey本体の機能に加えて、以下の機能追加を行っています。</p>
-<h3 id="_4">レイアウト調整</h3>
-<p>nicomedkey.ccのロゴスタイルに合わせて、画面のレイアウト等を一部調整しています。</p>
-<h3 id="_5">トップページへのユーザー情報追加</h3>
-<p>非ログイン時のトップページに表示されるハイライトについて、投稿者の名前とアイコンを表示するようにしています。</p>
-<h3 id="_6">ニコニコ動画広告の追加</h3>
-<p>広告機能に画像だけで無く、ニコニコ動画のiframe埋め込みが指定出来る機能を追加しています。</p>
+<h2 id="new-user">NEW USER</h2>
+<p>登録して一週間以内のユーザーに付与されるロールです。</p>
+<p>一週間が経過すると自動で本ロールが外され、ベースロールが付与されます。</p>
+<ul>
+<li>ドライブ容量：500MB</li>
+<li>レートリミット基準：厳しめ</li>
+</ul>
+<h2 id="early-user">EARLY USER</h2>
+<p>2023/3/25以前に登録したユーザーに付与されるロールです。</p>
+<ul>
+<li>ドライブ容量：4000MB</li>
+<li>レートリミット基準：ゆるめ</li>
+</ul>
+<h2 id="bottrusted-bot">BOT・TRUSTED BOT</h2>
+<p>botアカウントに付与されます。TRUSTED BOTは運営者によって承認され、特別なコマンドが実行可能なロールです。</p>
 
 
 
@@ -466,7 +449,7 @@
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="前: 利用規約" rel="prev">
+          <a href="../custom/" class="md-footer__link md-footer__link--prev" aria-label="前: Misskeyソフトウェアと拡張について" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -475,20 +458,20 @@
                 <span class="md-footer__direction">
                   前
                 </span>
-                利用規約
+                Misskeyソフトウェアと拡張について
               </div>
             </div>
           </a>
         
         
           
-          <a href="../roles/" class="md-footer__link md-footer__link--next" aria-label="次: ロールについて" rel="next">
+          <a href="../customemoji/" class="md-footer__link md-footer__link--next" aria-label="次: カスタム絵文字について" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   次
                 </span>
-                ロールについて
+                カスタム絵文字について
               </div>
             </div>
             <div class="md-footer__button md-icon">
