@@ -27,5 +27,6 @@ extra:
 nav:
   - 利用規約: index.md
   - Misskeyソフトウェアと拡張について: custom.md
+  - ロールについて: roles.md
   - カスタム絵文字について: customemoji.md
   - 広告について: ads.md
