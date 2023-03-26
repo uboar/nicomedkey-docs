@@ -3,11 +3,12 @@ site_name: nicomedkey.cc Docs
 theme:
   name: material
   language: ja
-  logo: https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/logo_kari2.png
-  favicon: https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/logo_kari2.png
+  logo: https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/nicomedkey/logo3_b.svg
+  favicon: https://s3.ap-northeast-1.wasabisys.com/s3.nicomedkey.cc/public/nicomedkey/icon_b.svg
   features:
     - navigation.tabs
     - navigation.instant
+    - navigation.footer
     - toc.integrate
   font:
     text: Kosugi Maru
@@ -25,4 +26,6 @@ extra:
 
 nav:
   - 利用規約: index.md
-
+  - Misskeyソフトウェアと拡張について: custom.md
+  - カスタム絵文字について: customemoji.md
+  - 広告について: ads.md
